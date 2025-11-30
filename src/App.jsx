@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import Divider from './components/Divider'
 import { HiExternalLink, HiMail } from 'react-icons/hi'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import Logo from './components/Logo'
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
       <header className="w-full bg-white">
-        <div className="flex items-start justify-between px-4 py-4 pb-40">
+        <div className="flex items-start justify-between px-4 py-4">
           {/* Name on the left */}
           <div>
             <h1 className="text-black text-xl font-bold">raul razo,</h1>
@@ -21,14 +22,18 @@ function App() {
           <button className="text-black text-xl font-bold px-4">about</button>
         </div>
 
-        <Divider />
+        {/* <Divider /> */}
       </header>
+
+      <section className="px-4 pt-7">
+        <Logo />
+      </section>
 
       {/* Content section - placeholder for now */}
       <main className="w-full">
         {/* Content will go here later */}
         {/* Bio section */}
-        <section className="px-4 pt-7 pb-20">
+        <section className="px-4 pt-7 pb-10">
           <p className="text-black text-base leading-relaxed">
             I'm a passionate ai researcher with a strong focus on building
             scalable and efficient ai systems. I'm currently working on a
